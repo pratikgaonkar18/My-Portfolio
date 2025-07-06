@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+
+    <nav id="desktop-nav">
+      <div class="logo">Pratik Gaonkar</div>
+      <div>
+        <ul class="nav-links">
+          
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="toggle-container">
+  <input type="checkbox" id="darkModeToggle" />
+  <label for="darkModeToggle" class="toggle-switch"></label>
+</div>
+
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Pratik</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a onclick="toggleDarkMode()">Dark/Light</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/other_profile.jpg" alt="Pratik's profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Pratik Gaonkar</h1>
+       <p class="section__text__p2"><span id="typing"></span></p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/Pratiks_final_resume.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/pratik-gaonkar-bb6b75294'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/pratikgaonkar18'"
+          />
+          
+        </div>
+      </div>
+    </section>
+    <br><br/>
+    <section id="about">
+      
+      <p class="section__text__p1" data-aos="fade-down" data-aos-duration="800">Get To Know More</p>
+      <h1 class="title" data-aos="fade-up" data-aos-duration="800">About Me</h1>
+      <div class="section-container">
+      <div class="section__pic-container" data-aos="fade-right">
+  <img
+    src="./assets/profile_pic.jpg"
+    alt="Pratik profile picture"
+    class="about-pic"
+  />
+</div>
+
+<div class="about-details-container" >
+<div data-aos="fade-up" data-aos-delay="200"></div>
+<div data-aos="fade-up" data-aos-delay="400"></div>
+<div data-aos="zoom-in" data-aos-duration="1000"></div>
+
+
+ <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container" data-aos="zoom-in-up" data-aos-delay="200">
+
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+
+              <h3>Experience</h3>
+              <p>MCA student with a strong foundation in<br /><strong>Software development<br/>Web technologies<br/>Database management.</strong><br />Passionate about building efficient and scalable applications while
+continuously learning new technologies. Open to contributing to software, backend, and web development. </p>
+            </div>
+           <div class="details-container" data-aos="zoom-in-up" data-aos-delay="400">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p><strong>Bachelor of Computer Applications</strong><br/> Karnatak University, Dharwad</p><br/>
+              <p><strong>Master of Computer Applications</strong><br/> Bangalore Institute Of Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p align="center">
+              Passionate student with a knack for crafting intuitive digital experiences through web development.
+              Equipped with a solid foundation in HTML, CSS, and JavaScript.
+              I thrive on staying updated with the latest technologies, always eager to push boundaries 
+              and contribute meaningfully to the tech landscape.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <br/><br/><br/><br/><br/>
+        <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <h2 class="experience-sub-title"></h2>
+      <br/>
+<div class="article-container">
+  <article>
+    <img src="./assets/checkmark.png" class="icon" />
+    <div>
+      <h3>Java</h3>
+      <p>Experienced</p>
+    </div>
+  </article>
+  <article>
+    <img src="./assets/checkmark.png" class="icon" />
+    <div>
+      <h3>SpringBoot</h3>
+      <p>Intermediate</p>
+    </div>
+  </article>
+  <article>
+    <img src="./assets/checkmark.png" class="icon" />
+    <div>
+      <h3>DSA</h3>
+      <p>Intermediate</p>
+    </div>
+  </article>
+</div>
+<br/>
+      
+         
+<section id="experience">
+
+  <div class="skills-grid">
+    <div class="skill-card" data-aos="zoom-in" data-aos-duration="100">
+      <h3 class="skill-title">Frontend Development</h3>
+      <ul class="skill-list">
+        <li>HTML5: Semantic markup, accessibility</li>
+        <li>CSS3: Flexbox, Grid, Animations</li>
+        <li>JavaScript: DOM, Events, Fetch API</li>
+      </ul>
+    </div>
+
+    <div class="skill-card" data-aos="zoom-in"  data-aos-delay="100">
+      <h3 class="skill-title">Backend Development</h3>
+      <ul class="skill-list">
+        <li>PHP: Forms, Sessions, CRUD</li>
+        <li>MySQL: Joins, DB design</li>
+        <li>Spring Boot: REST APIs, MVC</li>
+      </ul>
+    </div>
+
+    <div class="skill-card" data-aos="zoom-in"  data-aos-delay="100">
+      <h3 class="skill-title">Tools & Platforms</h3>
+      <ul class="skill-list">
+        <li>Git & GitHub: Version control</li>
+        <li>VS Code: Main code editor</li>
+
+      </ul>
+    </div>
+  </div>
+</section>       
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+<br/><br/><br/><br/>
+    <section id="projects">
+
+      <section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <br/>
+ <div class="projects-grid">
+  <a href="https://github.com/Prasannaff/Flying-Demon-Game-Flappy-bird-" target="_blank" class="project-card-link">
+      <div class="project-card" data-aos="fade-down" data-aos-duration="1000">
+      <img src="./assets/flappy.png" class="project-img" />
+      <h3 class="project-title">Flappy Bird Clone</h3>
+      <p class="project-desc">This is a haunted-themed Flappy Bird game where you control a ghostly entity and navigate through eerie obstacles in a graveyard setting.</p>
+    </div>
+  </a>
+
+  <a href="https://github.com/pratikgaonkar18/Pac-man" target="_blank" class="project-card-link">
+     <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
+      <img src="./assets/pacman.png" class="project-img" />
+      <h3 class="project-title">Pac-Man</h3>
+      <p class="project-desc">A retro-style Pac-Man game built using C, featuring smooth gameplay, AI-controlled ghosts, power-ups, and a fully interactive maze.</p>
+    </div>
+  </a>
+
+  <a href="https://github.com/pratikgaonkar18/Sorting-Visualizer" target="_blank" class="project-card-link">
+     <div class="project-card" data-aos="fade-down" data-aos-duration="1000">
+      <img src="./assets/DSA.png" class="project-img" />
+      <h3 class="project-title">DSA Visualizer</h3>
+      <p class="project-desc">A Sorting Algorithm Visualizer built using Java, designed to demonstrate how different sorting algorithms work through real-time animations.</p>
+    </div>
+  </a>
+</div>
+</div>
+</section>
+
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+  </section>
+
+<section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <!-- <div class="contact-info-upper-container"> -->
+        <div class="contact-info-upper-container" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:prateekgaonkar55@gmail.com">prateekgaonkar55@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href=" https://www.linkedin.com/in/pratik-gaonkar-bb6b75294">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Pratik Gaonkar. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  </body>
+</html>
